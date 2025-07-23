@@ -15,7 +15,7 @@ jobs:
           node-version: 22
       - name: Install Dependencies
         run: npm ci 
-        working-directory: tp4
+        working-directory: react-website
   build:
     runs-on: ubuntu-latest
     steps:
