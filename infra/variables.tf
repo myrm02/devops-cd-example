@@ -68,12 +68,6 @@ variable "price_class" {
   
 }
 
-variable "s3_origin_id" {
-  type        = string
-  description = "TP2 Front S3 Origin ID"
-  default     = "tp2-front-s3-origin"
-}
-
 variable "cloudfront_origin_access_identity" {
   type        = string
   description = "TP2 Front CloudFront Origin Access Identity"

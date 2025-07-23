@@ -29,13 +29,13 @@ module "cdn" {
     awesome_s3 = {
       domain_name = aws_s3_bucket.main.bucket_regional_domain_name
       s3_origin_config = {
-        origin_access_identity = locals.s3_origin_id
+        origin_access_identity = local.s3_origin_id
       }
     }
   }
 
   default_cache_behavior = {
-    target_origin_id       = locals.s3_origin_id
+    target_origin_id       = local.s3_origin_id
     viewer_protocol_policy = var.viewer_protocol_policy
 
     allowed_methods = var.allowed_methods
